@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsHub</title>
+    <!--font awesome-->
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
+
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" 
+        rel="stylesheet"
+    />
+    <!--css-->
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+
+    <header>
+        <img src="./Capture.JPG" width="120px" margin="5">
+        <div class="inputSearch desktop">
+            <form id="searchForm">
+            <input type="text" placeholder="Type to search..." id="searchInput"/>
+            <span><i class="fa-brands fa-searchengin" style="color: #03071e;"></i></span>
+            </form>
+        </div>
+        <nav class="desktop">
+            <ul>
+                <li onclick="Search('General')">General</li>
+                <li onclick="Search('Business')">Business</li>
+                <li onclick="Search('Sports')">Sports</li>
+                <li onclick="Search('Technology')">Technology</li>
+                <li onclick="Search('Entertainment')">Entertainment</li>
+            </ul>
+        </nav>
+
+        <div class="menuBtn">
+            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+        </div>
+
+        <div class="mobile hidden ">
+            <nav >
+                <ul>
+                    <li onclick="Search('General')">General</li>
+                    <li onclick="Search('Business')">Business</li>
+                    <li onclick="Search('Sports')">Sports</li>
+                    <li onclick="Search('Technology')">Technology</li>
+                    <li onclick="Search('Movie')">Entertainment</li>
+                </ul>
+            </nav>
+            <div class="inputSearch">
+                <form id="searchFormMobile" id="searchInputMobile">
+                <input type="text" placeholder="Type to search..." />
+                <span><i class="fa-brands fa-searchengin" style="color: #03071e;"></i></span>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!--main-->
+    <main></main>
+    <script src="script.js"></script>
+</body>
+</html>
